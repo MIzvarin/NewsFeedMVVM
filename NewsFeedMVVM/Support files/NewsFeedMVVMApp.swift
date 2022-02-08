@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct NewsFeedMVVMApp: App {
+    let viewModel = NewsViewModel()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NewsView(viewModel: viewModel)
         }
     }
 }
